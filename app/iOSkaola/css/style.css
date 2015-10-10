@@ -1,0 +1,77 @@
+*{margin:0;padding:0;}/*写CSS前，一般都会加上一条通配符设置取消浏览默认值*/
+a {text-decoration: NONE}
+
+body {
+	background-color: #f0f0f0;
+	background-image: url(../img/bg.jpg);
+	text-align:center;
+}
+
+#div_f1{ 
+	width:240px;
+	margin:0 auto;
+	/*border:1px solid red; */
+} 
+
+#div_f1 ul {
+	width:100%;
+	list-style:none;/*这一句是取消列表前点，因为我们不需要这些点。*/
+	margin:0;/*这一句是删除UL的缩进，这样做可以使所有的列表内容都不缩进。 */
+	color: #D6D6D6;
+	} 
+#div_f1 ul li {float:left;}  /*这里的 float:left 的左右是让内容都在同一行显示，因此使用了浮动属性(float)。*/
+
+#li_top{
+	color:#F99D0A;
+	width:100%;
+	font-size:22px;
+	margin:0 0 15px 0;
+}
+
+#li_logo{
+	width:100%;
+}
+#li_title{
+	color:#F99D0A;
+	width:100%;
+	font-size:22px;
+	margin:0 0 30px 0;
+}
+
+#li_allright{
+	width:100%;
+	font-size:10px;
+	color:#999999;
+	margin:30px 0 0 0;
+}
+
+#li_lable{
+	width:49%;
+	font-size:10px;
+	color:#999999;
+	margin:5px auto; 
+}
+
+#li_text{
+	width:100%;
+	font-size:20px;
+	margin:5px auto; 
+}
+
+a:link { 
+color:#FAAF0A; 
+text-decoration:none; 
+} 
+a:visited { 
+color:#FAAF0A; 
+text-decoration:none; 
+} 
+a:hover { 
+color:#F99D0A;
+text-decoration:underline; 
+} 
+a:active {
+	color:#FAAF0A;
+	text-decoration:none;
+	font-size: 18px;
+} 
