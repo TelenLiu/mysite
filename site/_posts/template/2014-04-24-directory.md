@@ -4,6 +4,7 @@ title: "jekyll加载图片的路径问题"
 description: ""
 category: 技术分享
 tags: [路径]
+published: false
 ---
 {% include JB/setup %}
 # jekyll加载图片的路径问题

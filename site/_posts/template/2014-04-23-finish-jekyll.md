@@ -4,6 +4,7 @@ title: "对5天来关于jekyll的心得"
 description: ""
 category: 技术分享
 tags: [jekyll blog]
+published: false
 ---
 {% include JB/setup %}
 # 完成基于jekyll的第一个blog

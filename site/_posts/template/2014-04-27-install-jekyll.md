@@ -4,6 +4,7 @@ title: "install jekyll 流程"
 description: ""
 category: 技术分享
 tags: [install jekyll]
+published: false
 ---
 {% include JB/setup %}
 # install jekyll 流程
