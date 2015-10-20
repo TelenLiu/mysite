@@ -1,4 +1,7 @@
-
+---
+---
+{% include JB/setup %}
+{% assign posts_collate = site.posts %}
 <!DOCTYPE html>
 <!--[if IE 7]>
  <html class="ie ie7" lang="zh-CN">
@@ -42,8 +45,8 @@
                     <li id="li_text"><strong><a target="_self" href="http://cccsee.sinaapp.com">虫虫才色</a></strong></li>
                     <li id="li_lable">---------------------</li>
                     <li id="li_lable">---------------------</li>
-                    <li id="li_text"><strong><a target="_self" href="http://cccsee.cn/site">笑点-首页</a></strong></li>
-                    <li id="li_text"><strong><a target="_self" href="http://cccsee.cn/site/archive.html">笑点-全部</a></strong></li>
+                    <li id="li_text"><strong><a target="_self" href="/site">笑点-首页</a></strong></li>
+                    <li id="li_text"><strong><a target="_self" href="/site/archive.html">笑点-全部</a></strong></li>
                     <li id="li_lable">---------------------</li>
                     <li id="li_lable">---------------------</li>
                     <li id="li_text"><strong><a target="_blank" href="http://github.com/TelenLiu">Telen-github</a></strong></li>
@@ -60,7 +63,8 @@
                         </div>
                     </li>
                     <li id="li_allright">品读·思考·感悟·修己·践行</li>
-                    <li id="li_allright">Copyright ©2009-2014 虫虫才色  cccsee.cn   All Rights Reserved.</li>
+                    <li id="li_post">{% include JB/posts_collate_rand %}</li>
+                    <li id="li_allright">Copyright ©2009-2015 虫虫才色  cccsee.cn   All Rights Reserved.</li>
                     <li id="li_allright"><script type="text/javascript">
                         var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
                         document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F4691c35f073d9b74058f68adeb22308b' type='text/javascript'%3E%3C/script%3E"));

@@ -49,6 +49,13 @@ body ul{
 	margin:20px 0 0 0;
 }
 
+#li_post{
+	width:100%;
+	font-size:10px;
+	color:#999999;
+	margin:16px 0px 0px 18px;
+}
+
 #li_lable{
 	width:49%;
 	font-size:10px;
