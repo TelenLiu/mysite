@@ -9,7 +9,7 @@ tags : [紫薇, 尔康]
 {% include JB/setup %}
 # 紫薇你想多了
 ---
-![mosquito](/site/image/erkang+ziwei.jpeg)
+![weixin](/site/image/erkang+ziwei.jpeg)
 
 <!--break-->
 尔康:`紫薇，你先别把我拉黑，我还要一个问题` 
