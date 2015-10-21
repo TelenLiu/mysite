@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 小明系列之狮虎兽
-category : [小明, 搞笑, 回答]
+category : [小明, 搞笑]
 tagline: ""
 description: "小明系列之课堂回答-狮虎兽"
-tags : [小明, 狮虎兽, 回答]
+tags : [小明, 狮虎兽, 问答]
 ---
 {% include JB/setup %}
 #狮虎兽
