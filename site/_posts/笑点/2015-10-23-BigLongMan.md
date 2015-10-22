@@ -4,7 +4,7 @@ title: 相亲榜首
 category : [荤的, 搞笑]
 tagline: ""
 description: "荤段子"
-tags : [榜首，相亲]
+tags : [榜首,相亲]
 ---
 {% include JB/setup %}
 #相亲榜首
