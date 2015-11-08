@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 小明系列之瞌睡作文
-category : [搞笑,问答]
+category : [小明,搞笑,问答]
 tagline: ""
 description: "打瞌睡的作文"
 tags : [小明]
