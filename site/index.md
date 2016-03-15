@@ -17,12 +17,10 @@ group: navigation
       			{{ post.date | date:"%Y" }}
       			</div>
       		</div> 
-		{{ post.content  | | split:'<!--break-->' | first }}
+		{{ post.content }}
 	<div class = "read_more">
 		<a class="fa fa-link" href="{{ BASE_PATH }}{{ post.url }}">  查看全文&hellip;</a>
 	</div>
-	
 </div>
-
 {% endfor %}
 
