@@ -5,7 +5,8 @@ baseurl : /
 permalink: site/:year/:month/:day/:title
 markdown: rdiscount
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
+highlighter: rouge
+#highlighter: pygments
 #mardown: redcarpet
 
 safe: false
