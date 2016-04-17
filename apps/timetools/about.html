@@ -20,29 +20,29 @@
                 <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--设置ie浏览器兼容模式-->
     </head>
     <body>
-        <script>
-		function getUrlParams() {
-        var url = location.search;
-        var params = new Object();
-        if (url.indexOf("?") != -1) {
-          var str = url.substr(1);
-          strs = str.split("&");
-          for(var i = 0; i < strs.length; i ++) {
-           params[strs[i].split("=")[0]]=strs[i].split("=")[1];
-          }
+    <script>
+        function getUrlParams() {
+            var url = location.search;
+            var params = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for(var i = 0; i < strs.length; i ++) {
+                    params[strs[i].split("=")[0]]=strs[i].split("=")[1];
+                }
+            }
+            return params;
+        };
+        var urlRef = getUrlParams();
+        var lang = urlRef.lang;
+        <!--alert(lang);-->
+        if (lang == "en"){
+            //alert(lang);
+            window.location.href="about_en.html";
+        }else{
+            //alert(lang);
+            window.location.href="about_cn.html";
         }
-        return params;
-      };
-	  var urlRef = getUrlParams();
-       var lang = urlRef.lang;
-       <!--alert(lang);-->
-	   if (lang == "cn"){
-		   //alert(lang);
-		   window.location.href="about_cn.html";
-	   }else if(lang == "en"){
-		   //alert(lang);
-		   window.location.href="about_en.html";
-	   }
-		</script>
+    </script>
     </body>
 </html>
