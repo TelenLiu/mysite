@@ -18,31 +18,20 @@
             <meta content="" name="keywords"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--设置屏幕自动适配宽-->
                 <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--设置ie浏览器兼容模式-->
+                    
+	<link rel='stylesheet' id='style-css'  href='css/about.css' type='text/css' media='all' />
     </head>
     <body>
-        <script>
-		function getUrlParams() {
-        var url = location.search;
-        var params = new Object();
-        if (url.indexOf("?") != -1) {
-          var str = url.substr(1);
-          strs = str.split("&");
-          for(var i = 0; i < strs.length; i ++) {
-           params[strs[i].split("=")[0]]=strs[i].split("=")[1];
-          }
-        }
-        return params;
-      };
-	  var urlRef = getUrlParams();
-       var lang = urlRef.lang;
-       <!--alert(lang);-->
-	   if (lang == "cn"){
-		   //alert(lang);
-		   window.location.href="about_cn.html";
-	   }else if(lang == "en"){
-		   //alert(lang);
-		   window.location.href="about_en.html";
-	   }
-		</script>
+        <div>
+            <h1 class="aboutH" >关于时间工具</h1>
+            <p>作者，收集起一个个关于时间的故事，实现一个个时间的梦想，组装起一个个时间插件...</p>
+            <p>1、目前收集有，LCD时间，可以当台表使用              </p>
+            <p>2、生日本，支持阳历与农历，每年准时提醒
+              更多持续更新中....
+              欢迎你的参与，也许下一个插件为你定制。</p>
+            <p> 联系作者              </p>
+            <p>微博：http://weibo.com/telen              </p>
+            <p>邮箱：telenliu@qq.com</p>
+    </div>
     </body>
 </html>
