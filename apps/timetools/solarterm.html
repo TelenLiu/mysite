@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+ <html class="ie ie7" lang="zh-CN">
+ <![endif]-->
+<!--[if IE 8]>
+ <html class="ie ie8" lang="zh-CN">
+ <![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+            <!-- 设置标题 -->
+            <title>关于时间工具</title>
+            
+            <!-- 设置描述性标签和关键词标签 -->
+            <meta content="" name="description"/>
+            <meta content="" name="keywords"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--设置屏幕自动适配宽-->
+                <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--设置ie浏览器兼容模式-->
+    </head>
+    <body>
+    <script>
+        function getUrlParams() {
+            var url = location.search;
+            var params = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for(var i = 0; i < strs.length; i ++) {
+                    params[strs[i].split("=")[0]]=strs[i].split("=")[1];
+                }
+            }
+            return params;
+        };
+        var urlRef = getUrlParams();
+        var lang = urlRef.lang;
+        var solar = decodeURI(urlRef.solar);
+        alert(solar);
+        switch (solar){
+            case "谷雨":
+                window.location.href="http://baike.baidu.com/subview/11235/5615203.htm";
+                break;
+            default:
+                //window.location.href="http://baike.baidu.com/subview/6385/13600971.htm?fromtitle=24%E8%8A%82%E6%B0%94&fromid=1245636&type=syn";
+                break;
+        }
+    </script>
+    </body>
+</html>
