@@ -80,6 +80,8 @@ function loadURL(url) {
 
 //移除广告  s.lol5s.com
 function removeAd(){
+	loadURL("log://"+"removeAd_s.lol5s.com");
+	alert("removeAd");
     var mlist = document.body.childNodes;
     for (var i=0; i<mlist.length; i++){
         var box = mlist[i];
