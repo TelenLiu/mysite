@@ -80,19 +80,17 @@ function loadURL(url) {
 
 //移除广告  s.lol5s.com
 function removeAd(){
-	loadURL("log://"+"removeAd_s.lol5s.com");
-	alert("removeAd");
-    var mlist = document.body.childNodes;
+    //loadURL("log://"+"removeAd_s.lol5s.com");
+    var mlist = document.getElementsByTagName("div");
     for (var i=0; i<mlist.length; i++){
         var box = mlist[i];
         var tagname = box.tagName;
-        if(tagname != 'DIV'){
-            //box.parentNode.removeChild(box);
-        }else{
+        if(tagname == 'DIV'){
             var classname = box.className;
             var nodeId = box.id;
-            if(classname == 'iIk_tfta236ufq_soyf1m8wcanh_frXe'
-               || nodeId == 'iIk_tfta236ufq_soyf1m8wcanh_frXe'
+            if(classname == "iIk_tfta236ufq_soyf1m8wcanh_frXe"
+               || nodeId == "iIk_tfta236ufq_soyf1m8wcanh_frXe"
+               || nodeId == "baseHeight"
                ){
                 box.parentNode.removeChild(box);
             }
@@ -100,4 +98,3 @@ function removeAd(){
     }
 }
 removeAd();
-
